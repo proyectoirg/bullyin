@@ -1,0 +1,275 @@
+@import url('https://fonts.googleapis.com/css2?family=Titillium+Web:wght@300;400;600;700&display=swap');
+
+
+:root{
+    --boton-padding: 20px 40px;
+    --padding-container: 100px 0;
+    --color-title: #001A49;
+}
+
+body{
+    font-family: 'Titillium Web', sans-serif;
+}
+
+.container{
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    overflow: hidden;
+    padding: var(--padding-container);
+}
+
+.hero{
+    width: 100%;
+    height: 100vh;
+    min-height: 100px;
+    max-height: 800px; 
+    position: relative;
+    display: grid;
+    grid-template-rows: 100px 1fr;
+    color: #000;
+}
+
+.hero::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #737373;
+    background-size: cover;
+    clip-path: polygon(50% 0%, 100% 0, 100% 35%, 100% 70%, 80% 90%, 50% 100%, 20% 90%, 0% 70%, 0% 35%, 0 0);
+    z-index: -1;
+}
+
+/* nav */
+
+.nav{
+    --padding-container:0;
+    height: 100%;
+    display: flex;
+    align-items: center;
+}
+
+.nav__title{
+    font-weight: 300;
+    color: #fff;
+}
+
+.nav__items{
+    list-style: none;
+}
+
+.nav__links{
+    color: #fff;
+    text-decoration: none;
+}
+
+.nav__link{
+    margin-left: auto;
+    padding: 0;
+    display: grid;
+    grid-auto-flow: column;
+    grid-auto-columns: max-content;
+    gap: 2em;
+}
+
+.nav__menu{
+    margin-left: auto;
+    cursor: pointer;
+    display: none;
+}
+
+/* hero container */
+
+.hero__container{
+    max-width: 800px;
+    display: grid;
+    --padding-container:0;
+    grid-auto-rows: max-content;
+    align-content: center;
+    gap: 1em;
+    padding-bottom: 100px;
+    text-align: center;
+}
+
+.hero__title{
+    font-size: 3rem;
+    color: #fff;
+}
+
+.hero__paragraph{
+    margin-bottom: 20px;
+    color: #fff;
+}
+
+
+/* about */
+
+.about{
+    text-align: center;
+}
+
+.subtitle{
+    color: var(--color-title);
+    font-size: 2rem;
+    margin-bottom: 25px;
+}
+
+.about__paragraph{
+    line-height: 1.7;
+}
+
+.about__main{
+    padding-top: 80px;
+    display: grid;
+    width: 90%;
+    margin: 0 auto;
+    gap: 1em;
+    overflow: hidden;
+    grid-template-columns: repeat(auto-fit, minmax(260px, auto));
+}
+
+
+.about__texts1{
+    background-color: #26272b;
+    color: #fff;
+    padding: 40px 30px;
+}
+
+.img_a{
+    width: 250px;
+    height: 150px;
+    object-fit: cover;
+    max-width: 100%;
+}
+
+.contenedor{
+    width: 90%;
+    min-width: 1000px;
+    margin: auto;
+    overflow: hidden;
+    padding: 52px 0;
+}
+
+.sobre-nosotros{
+    text-align: center;
+    font-size: 56px;
+    margin-bottom: 10px;
+    font-weight: 600;
+}
+
+.slogan{
+    text-align: center;
+}
+
+.cards{
+    width: 100%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around ;
+}
+
+.card{
+    margin: 20px 0;
+    width: 30%;
+    height: 250px;
+    text-align: center;
+    padding: 20px;
+    box-shadow: 0px 0px 4px 0px rgba(52, 73, 94, 0.753);
+}
+
+.cards img{
+    width: 140px;
+    height: 140px;
+    object-fit: cover;
+    border-radius: 100%;
+    max-width: 100%;
+    height: auto;
+}
+
+.title{
+    margin: 0;
+    height: 150px;
+    font-size: 70px;
+}
+
+.titulo__ae{
+    text-align: left;
+    padding: 40px 50px;
+    color: #fffb00;
+    font-size: 30px;
+}
+
+.titulo__ae2{
+    text-align: right;
+    padding: 40px 50px;
+    color: #fffb00;
+    font-size: 30px;
+}
+
+.parrafo{
+    text-align: justify;
+    padding: 0px 50px;
+}
+
+.parrafo2{
+    text-align: right;
+    height: 150px;
+}
+
+/* footer */
+
+.contenedorr{
+    text-align: left;
+    padding: 30px;
+}
+
+.site-footer{
+  background-color:#26272b;
+  padding:45px 0 20px;
+  font-size:15px;
+  line-height:24px;
+  color:#737373;
+}
+
+.site-footer h6{
+  color:#fff;
+  font-size:16px;
+  text-transform:uppercase;
+  margin-top:5px;
+  letter-spacing:2px
+}
+
+.inicio{
+    padding: 10px;
+    text-decoration: none;
+    color: rgb(202, 13, 13);
+    font-size: 20px;
+}
+
+.titulo__ae3{
+    color: #2091F9;
+    text-align: left;
+    padding: 0 50px;
+}
+
+.titulo__ae4{
+    color: #12f31d;
+    text-align: left;
+    padding: 0 50px;
+}
+
+.titulo__ae5{
+    color: #ff0bdf;
+    text-align: left;
+    padding: 0 50px;
+}
+
+.parrafo__ta{
+    text-align: left;
+    padding: 0 50px;
+}
+
